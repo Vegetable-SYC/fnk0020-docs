@@ -12,17 +12,16 @@ import sys
 
 sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 
-os.system("rm -r freenove_Kit")
-os.system("git clone --depth 1 https://github.com/Freenove/Freenove_Super_Starter_Kit_for_ESP8266 freenove_Kit")
-project = 'fnk0074-docs'
+# os.system("rm -r freenove_Kit")
+# os.system("git clone --depth 1 https://github.com/Freenove/Freenove_Media_Kit_for_ESP32-S3 freenove_Kit")
 
-# >>> BEGIN BASE CONFIG (AUTO-GENERATED)
-# !!! DO NOT EDIT THIS SECTION MANUALLY !!!
+project = "fnk0102-docs"
+# <!!!BEGIN!!!>
 copyright = '2016-2025, Freenove'
 author = 'Freenove'
 release = 'v1.0.0'
 version = 'v1.0.0'
-# 分支测试第53次###############
+
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
@@ -132,8 +131,5 @@ def setup(app):
     # app.add_css_file("css/custom.css")
     # app.add_css_file('https://cdn.jsdelivr.net/gh/Freenove/freenove-docs/docs/source/_static/css/custom.css')
 
-# <<< END BASE CONFIG
-
-
-# === BEGIN PROJECT-SPECIFIC CONFIG ===
-# （原来的所有配置内容保持在这里不变）
+suppress_warnings = ['autosectionlabel.*']
+# <!!!END!!!>
