@@ -4,6 +4,13 @@ build:
   os: "ubuntu-22.04"
   tools:
     python: "3.10"
+  jobs:
+    pre_build:
+      - echo "Updating submodules to the latest version..."
+      - git submodule update --init --remote --merge
+
+checkout:
+  submodules: true
 
 python:
   install:

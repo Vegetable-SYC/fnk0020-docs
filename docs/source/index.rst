@@ -24,6 +24,11 @@ whether they are questions before buying or problems in use.
 
 In general, we will reply to you within one working day.
 
+.. literalinclude:: ./freenove_Kit/Code/C_Code/00.0.0_Hello/Hello.c
+    :linenos:
+    :language: c
+    :dedent:
+
 Documentation
 ====================================================
 
