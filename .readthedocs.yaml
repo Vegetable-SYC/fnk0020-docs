@@ -9,9 +9,6 @@ build:
       - echo "Updating submodules to the latest version..."
       - git submodule update --init --remote --merge
 
-checkout:
-  submodules: true
-
 python:
   install:
     - requirements: docs/requirements.txt
